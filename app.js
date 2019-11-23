@@ -13,7 +13,7 @@ const parameter = require('koa-parameter')
 app.use(parameter(app))
 // 链接数据库
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://47.101.47.245/zcmax',{useNewUrlParser: true})
+mongoose.connect('mongodb://127.0.0.1:27017/zcmax',{useNewUrlParser: true})
 .then(()=>{
   console.log('mongodb zcmax start')
 })

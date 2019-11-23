@@ -73,7 +73,7 @@ goodsRouter.get('/good/:classid' , async ctx=>{
     let pagesize = ctx.query.pagesize ||   4
   let pagenumber = ctx.query.pagenumber || 1
   const res = await Goods.find({classid:ctx.params.classid}).skip(pagesize * (pagenumber - 1)).limit(pagesize*1)
-  ctx.body = {meta: {msg:"ok",status:200} , data:res}
+  ctx.body = {meta: {msg:"okl",status:200} , data:res}
 })
 
 // $route get /api/goods/good

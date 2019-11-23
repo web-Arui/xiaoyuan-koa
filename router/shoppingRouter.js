@@ -32,7 +32,7 @@ shoppingRouter.get('/carts/:uid', async ctx =>{
             arr.push(res[i].items)
         }
     }
-    ctx.body = {meta:{msg:'ok',status:200},data:res}
+    ctx.body = {meta:{msg:'ok2',status:200},data:res}
 })
 
 // $route post /api/shopping/carts
